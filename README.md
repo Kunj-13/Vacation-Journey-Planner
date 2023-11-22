@@ -31,6 +31,9 @@ The code is structured around the `CityGraph` class, which manages city data and
 - **Happy Spots Recommendations**: Displays tourist attractions in the destination city.
   
 Test results demonstrate accurate path calculations and responsive UI elements.
+<img width="606" alt="Screenshot 2023-11-22 at 12 58 07 PM" src="https://github.com/Kunj-13/Vacation-Journey-Planner/assets/143433713/2d40fefc-aefb-4c96-9005-834a514d57ff">
+
+
 
 ## Discussion and Conclusions
 

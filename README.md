@@ -2,7 +2,7 @@
 
 # Project Report: Vacation Journey Planner
 
-## Project Goals
+** Project Goals
 
 The primary objective of the Vacation Journey Planner project is to provide users with an efficient and interactive way to plan their journeys between different cities. The project aims to calculate the shortest path between two selected cities and recommend 'happy spots'—key attractions and destinations—within these cities, thereby enhancing the overall travel experience.
 

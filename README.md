@@ -18,37 +18,49 @@ The project is significant in two main aspects: it facilitates efficient travel 
 
 ## Code Structure
 
-- Class CityGraph: Handles the graph data structure.
-__init__: Initializes the graph with empty sets and dictionaries.
-add_city: Adds a city to the graph.
-connect_cities: Connects two cities with a given distance.
-calculate_shortest_distances: Implements Dijkstra's algorithm to find the shortest path between two cities.
-Function find_path: Interacts with the GUI to display the shortest path and distance.
-Retrieves cities from the GUI.
-Calls calculate_shortest_distances to get the path and distance.
-Formats and displays the result on the GUI.
-Tkinter GUI Setup:
-Initializes the Tkinter window.
-Sets up the CityGraph instance and adds cities and connections.
-Defines happy spots for each city.
-Creates UI elements like labels, combo boxes for city selection, a button to find paths, and a label to display results.
-Main Loop:
-window.mainloop() starts the Tkinter event loop.
-Dijkstra's Algorithm Explanation
-Dijkstra's algorithm is used here in the calculate_shortest_distances method to find the shortest path between two cities. The steps are as follows:
+This code implements a vacation journey planner using Dijkstra's algorithm in Python with a graphical user interface (GUI) created using Tkinter. It allows users to select a starting city and a destination city, then calculates the shortest path and total distance between these cities.
 
-Initialization:
-A priority queue (priority_queue) is used to efficiently retrieve the next city with the shortest known distance.
-A dictionary (distances) tracks the shortest known distance to each city, initialized to infinity for all cities except the start city (set to 0).
-Another dictionary (previous_city) tracks the previous city on the shortest path to each city.
-Algorithm Loop:
-The city with the smallest known distance is popped from the priority queue.
-If this city is the destination, the algorithm stops.
-Otherwise, for each neighboring city, if the distance through the current city is shorter than the known distance, update the distance and add the neighbor to the priority queue.
-Path Reconstruction:
-Once the destination is reached or determined to be unreachable, the path is reconstructed in reverse using the previous_city dictionary.
-The path and the total distance are returned.
-- Tkinter UI setup for user interaction.
+### Code Structure and Explanation
+
+1. **Class `CityGraph`:** Handles the graph data structure.
+    - `__init__`: Initializes the graph with empty sets and dictionaries.
+    - `add_city`: Adds a city to the graph.
+    - `connect_cities`: Connects two cities with a given distance.
+    - `calculate_shortest_distances`: Implements Dijkstra's algorithm to find the shortest path between two cities.
+
+2. **Function `find_path`:** Interacts with the GUI to display the shortest path and distance.
+    - Retrieves cities from the GUI.
+    - Calls `calculate_shortest_distances` to get the path and distance.
+    - Formats and displays the result on the GUI.
+
+3. **Tkinter GUI Setup:**
+    - Initializes the Tkinter window.
+    - Sets up the `CityGraph` instance and adds cities and connections.
+    - Defines happy spots for each city.
+    - Creates UI elements like labels, combo boxes for city selection, a button to find paths, and a label to display results.
+
+4. **Main Loop:**
+    - `window.mainloop()` starts the Tkinter event loop.
+
+### Dijkstra's Algorithm Explanation
+
+Dijkstra's algorithm is used here in the `calculate_shortest_distances` method to find the shortest path between two cities. The steps are as follows:
+
+**Initialization:** 
+    - A priority queue (`priority_queue`) is used to efficiently retrieve the next city with the shortest known distance.
+    - A dictionary (`distances`) tracks the shortest known distance to each city, initialized to infinity for all cities except the start city (set to 0).
+    - Another dictionary (`previous_city`) tracks the previous city on the shortest path to each city.
+
+**Algorithm Loop:** 
+    - The city with the smallest known distance is popped from the priority queue.
+    - If this city is the destination, the algorithm stops.
+    - Otherwise, for each neighboring city, if the distance through the current city is shorter than the known distance, update the distance and add the neighbor to the priority queue.
+
+**Path Reconstruction:**
+    - Once the destination is reached or determined to be unreachable, the path is reconstructed in reverse using the `previous_city` dictionary.
+    - The path and the total distance are returned.
+
+Dijkstra's algorithm is efficient and works well for graphs with non-negative weights, making it suitable for applications like finding the shortest path in a network of cities.
 
 ## Functionalities and Test Results
 

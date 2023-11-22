@@ -12,7 +12,7 @@ The project is significant in two main aspects: it facilitates efficient travel 
 
 # Installation and Usage Instructions
 
-1. **Installation**: To use the Vacation Journey Planner, users need to have Python and the Tkinter library installed on their computers. Tkinter comes pre-installed with Python.
+1. **Installation**: To use the Vacation Journey Planner, users need to have any IDE that supports Python and the Tkinter library installed on their computers. They will not have to worry about installing Tkinter because it comes pre-installed with Python.
 
 2. **Usage**: Upon launching the program, users can select their starting and destination cities from drop-down menus. Clicking the "Find Path" button will display the shortest path, total distance, intermediate cities, and happy spots in the destination city.
 

@@ -10,7 +10,7 @@ The primary objective of the Vacation Journey Planner project is to provide user
 
 The project is significant in two main aspects: it facilitates efficient travel planning and enhances the happiness and satisfaction of travelers. By computing the shortest routes between cities and suggesting attractive landmarks and sites, the software not only saves time and resources but also enriches the travel experience. This aligns with the broader goal of improving happiness by providing joyful and stress-free travel experiences.
 
-# Installation and Usage Instructions
+## Installation and Usage Instructions
 
 1. **Installation**: To use the Vacation Journey Planner, users need to have any IDE that supports Python and the Tkinter library installed on their computers. They will not have to worry about installing Tkinter because it comes pre-installed with Python. 
 
@@ -20,7 +20,7 @@ The project is significant in two main aspects: it facilitates efficient travel 
 
 This code implements a vacation journey planner using Dijkstra's algorithm in Python with a graphical user interface (GUI) created using Tkinter. It allows users to select a starting city and a destination city, then calculates the shortest path and total distance between these cities.
 
-### Code Structure and Explanation
+## Code Structure and Explanation
 
 1. **Class `CityGraph`:** Handles the graph data structure.
     - `__init__`: Initializes the graph with empty sets and dictionaries.
@@ -42,7 +42,7 @@ This code implements a vacation journey planner using Dijkstra's algorithm in Py
 4. **Main Loop:**
     - `window.mainloop()` starts the Tkinter event loop.
 
-### Dijkstra's Algorithm Explanation
+## Dijkstra's Algorithm Explanation
 
 Dijkstra's algorithm is used here in the `calculate_shortest_distances` method to find the shortest path between two cities. The steps are as follows:
 
@@ -62,7 +62,7 @@ Dijkstra's algorithm is used here in the `calculate_shortest_distances` method t
 
 Dijkstra's algorithm is efficient and works well for graphs with non-negative weights, making it suitable for applications like finding the shortest path in a network of cities.
 
-** Functionalities and Test Results
+## Functionalities and Test Results
 
 - **Path Calculation**: The Dijkstra algorithm accurately calculates the shortest paths.
 - **UI Interaction**: Users can easily select cities and view results.
@@ -79,6 +79,6 @@ The picture below shows the results that users achieve after selecting the start
 
 
 
-** Discussion and Conclusions
+## Discussion and Conclusions
 
 The project successfully meets its objectives by providing efficient travel planning and enhancing user happiness through travel recommendations. However, it faces limitations like the static nature of city and connection data, and the absence of real-time traffic or weather conditions. The learnings from the course were effectively applied in implementing the Dijkstra algorithm and creating a user-friendly GUI. Future enhancements could include dynamic data updates and integration with real-time travel APIs.

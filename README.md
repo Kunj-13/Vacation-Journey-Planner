@@ -32,8 +32,11 @@ The code is structured around the `CityGraph` class, which manages city data and
   
 Test results demonstrate accurate path calculations and responsive UI elements.
 First picture demonstrates the interative GUI where users can use the dropdown feature to selection the starting city and the destination city.
+
 <img width="606" alt="Screenshot 2023-11-22 at 12 58 07 PM" src="https://github.com/Kunj-13/Vacation-Journey-Planner/assets/143433713/2d40fefc-aefb-4c96-9005-834a514d57ff">
+
 The picture below shows the results that users achieve after selecting the starting and destination cities. In this example, it shows the user selected Los Angeles as starting city and New York as destination city. After that, the application shows the users the shortest route in this case it was Los Angeles to Chicago to New York while showing the total miles distance after calculation. Also, it displays famous spots to visit in New York which are Times Square and Central Park. 
+
 <img width="608" alt="Screenshot 2023-11-22 at 12 58 33 PM" src="https://github.com/Kunj-13/Vacation-Journey-Planner/assets/143433713/8918dbed-b933-43d0-a755-3a14cae6a3b2">
 
 

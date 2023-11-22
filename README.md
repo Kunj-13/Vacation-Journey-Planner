@@ -62,7 +62,7 @@ Dijkstra's algorithm is used here in the `calculate_shortest_distances` method t
 
 Dijkstra's algorithm is efficient and works well for graphs with non-negative weights, making it suitable for applications like finding the shortest path in a network of cities.
 
-## Functionalities and Test Results
+** Functionalities and Test Results
 
 - **Path Calculation**: The Dijkstra algorithm accurately calculates the shortest paths.
 - **UI Interaction**: Users can easily select cities and view results.
@@ -79,6 +79,6 @@ The picture below shows the results that users achieve after selecting the start
 
 
 
-## Discussion and Conclusions
+** Discussion and Conclusions
 
 The project successfully meets its objectives by providing efficient travel planning and enhancing user happiness through travel recommendations. However, it faces limitations like the static nature of city and connection data, and the absence of real-time traffic or weather conditions. The learnings from the course were effectively applied in implementing the Dijkstra algorithm and creating a user-friendly GUI. Future enhancements could include dynamic data updates and integration with real-time travel APIs.

@@ -5,6 +5,7 @@ from collections import defaultdict
 
 class CityGraph:
     def __init__(self):
+        # Initialize the graph with sets and dictionaries to store cities and connections
         self.cities = set()
         self.connections = defaultdict(list)
 
@@ -15,21 +16,26 @@ class CityGraph:
         self.connections[city_a].append((city_b, distance))
         self.connections[city_b].append((city_a, distance))
 
+    # Calculate the shortest distance between two cities using Dijkstra's algorithm
     def calculate_shortest_distances(self, start, end):
         if start not in self.cities or end not in self.cities:
             return float('inf'), []
 
+        # Initialize distances and set up priority queue
         distances = {city: float('inf') for city in self.cities}
         distances[start] = 0
         priority_queue = [(0, start)]
         previous_city = {city: None for city in self.cities}
 
         while priority_queue:
+            # Pop the city with the shortest distance from the queue
             current_distance, current_city = heapq.heappop(priority_queue)
 
+            # Break if the end city is reached
             if current_city == end:
                 break
-
+                        
+            # Update distances for neighboring cities
             for neighbor, neighbor_distance in self.connections[current_city]:
                 distance = current_distance + neighbor_distance
                 if distance < distances[neighbor]:
@@ -37,6 +43,7 @@ class CityGraph:
                     previous_city[neighbor] = current_city
                     heapq.heappush(priority_queue, (distance, neighbor))
 
+        # Construct the path from start to end
         path = []
         current = end
         if distances[current] == float('inf'):

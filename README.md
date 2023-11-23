@@ -60,7 +60,7 @@ Dijkstra's algorithm is used here in the `calculate_shortest_distances` method t
     - Once the destination is reached or determined to be unreachable, the path is reconstructed in reverse using the `previous_city` dictionary.
     - The path and the total distance are returned.
 
-Dijkstra's algorithm is efficient and works well for graphs with non-negative weights, making it suitable for applications like finding the shortest path in a network of cities.
+Dijkstra's algorithm is very efficient and works well for applications like finding the shortest path in a network of cities.
 
 ## Functionalities and Test Results
 

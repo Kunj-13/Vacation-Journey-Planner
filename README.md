@@ -8,7 +8,7 @@ The primary objective of the Vacation Journey Planner application is to provide 
 
 ## Significance of the Project
 
-The project is significant in two main aspects: it facilitates efficient travel planning and enhances the happiness and satisfaction of travelers. By computing the shortest routes between cities and suggesting attractive landmarks and sites, the software not only saves time and resources but also enriches the travel experience. This aligns with the broader goal of improving happiness by providing joyful and stress-free travel experiences.
+Our Vacation Journey Planner application stands out for its meaningful contribution to enhancing the user's travel experience by recommending "happy spots" in destination cities. This unique feature elevates the application from being just a shortest route planner to an exciting travel guide, offering personalized and engaging travel suggestions. These recommendations not only cater to individual preferences but also promote a sense of happiness and joy, fostering a deeper connection with discovery of local attractions. This aspect of the project significantly amplifies the overall happiness and satisfaction of travelers, making it a valuable tool for anyone seeking a more fulfilling travel experience.
 
 ## Installation and Usage Instructions
 

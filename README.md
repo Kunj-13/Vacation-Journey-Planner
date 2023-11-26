@@ -64,8 +64,9 @@ Dijkstra's algorithm is very efficient and works well for applications like find
 
 ## Functionalities and Test Results
 
-- **Path Calculation**: The Dijkstra algorithm accurately calculates the shortest paths.
-- **UI Interaction**: Users can easily select cities and view results.
+- **Path Calculation**: The Dijkstra algorithm accurately calculates the shortest paths between starting city and the destination.
+- **UI Interaction**: Users can easily select cities using the dropdown box and view results.
+- **Display of Travel Route:** Once a route is calculated, the application displays the path along with the total distance.
 - **Happy Spots Recommendations**: Displays tourist attractions in the destination city.
   
 Test results demonstrate accurate path calculations and responsive UI elements.
@@ -81,4 +82,4 @@ The picture below shows the results that users achieve after selecting the start
 
 ## Discussion and Conclusions
 
-The project successfully meets its objectives by providing efficient travel planning and enhancing user happiness through travel recommendations. However, it faces some limitations like the static city and connection data, and the absence of real-time traffic or weather conditions. For instance, users are only provided limited selections of cities, however, the application still offers significant education value. The learnings from the course were effectively applied in implementing the Dijkstra algorithm and creating a user-friendly GUI. Future enhancements could include dynamic data updates and integration with real-time travel APIs.
+The project successfully meets its objectives by providing efficient travel planning and enhancing user happiness through travel recommendations. However, it faces some limitations like the static city and connection data, and the absence of real-time traffic or weather conditions. For instance, users are only provided limited selections of cities, however, it is still very valuable application that can help tremendously in planning trips. The learnings from the course were effectively applied in implementing the Dijkstra algorithm and creating a user-friendly GUI. Future enhancements could include dynamic data updates and integration with real-time travel APIs.
